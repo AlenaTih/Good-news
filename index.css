@@ -1,0 +1,284 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    color: #1B1924;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    background-image: url(assets/ilse-stokking-unsplash-plant-the-light.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 40%;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+#input-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#input-news {
+    color: #FCF3F6;
+    font-size: 15px;
+    height: 120px;
+    width: 320px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #444059;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px #503C29;
+    resize: vertical;
+}
+
+#input-news::placeholder {
+    text-align: left;
+    line-height: 1.5;
+}
+
+#input-news:hover {
+    background-color: #3F3A57;
+}
+
+.input-user {
+    color: #FCF3F6;
+    font-size: 15px;
+    height: 40px;
+    width: 150px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #444059;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px #503C29;
+}
+
+.input-user:hover {
+    background-color: #3F3A57;
+}
+
+#from-date-fields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+#publish-btn {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    color: #04131C;
+    margin-top: 15px;
+    padding: 20px 120px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28A9F1;
+    cursor: pointer;
+    box-shadow: 0 4px 12px #503C29;
+}
+
+#publish-btn:hover {
+    background-color: #1FA0E8;
+}
+
+#thankyou-message {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #FCF3F6;
+    background-color: #28A9f1;
+    padding: 12px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: opacity 1s; /* Smooth fade-in effect */
+}
+
+#feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 15px;
+    background-color: #F9FAFB;
+    width: 320px;
+    /* max-width: 80%; */
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px #503C29;
+}
+
+.newsItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.like {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.like-button {
+    padding-right: 2px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* .like-button[data-liked="true"] {
+    color: #E11D48;
+} */
+
+.like-me {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+h9 {
+    color: #FCF3F6;
+    font-size: 15px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #container {
+        max-width: 100%;
+        margin-right: auto; /* Center the container horizontally */
+        margin-left: auto;
+        padding: 60px; /* More padding on desktop for spacious look */
+    }
+
+    h1 {
+        font-size: 50px; /* Increase the font size */
+    }
+
+    h2 {
+        font-size: 35px; /* Increase the font size */
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+
+    #input-news, .input-user {
+        font-size: 18px; /* Increase the input font size */
+    }
+
+    .input-user {
+        padding: 15px 18px;
+    }
+
+    #input-news {
+        /* width: 400px; Take up a bit more horizontal space */
+        max-width: 80%;
+    }
+
+    #input-fields {
+        flex-direction: row; /* Lay out the inputs horizontally */
+        gap: 25px; /* Gap between the inputs */
+        justify-content: center; /* Center the content */
+        margin-top: 40px;
+    }
+
+    #from-date-fields {
+        flex-direction: row;
+        gap: 15px; /* Increase the gap between From and Date fields */
+        justify-content: center;
+    }
+
+    #publish-btn {
+        font-size: 25px;
+        margin-top: 35px;
+        padding: 20px 120px; /* Adjust button padding */
+    }
+
+    #thankyou-message {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    li {
+        font-size: 20px;
+        width: 80%;
+        padding: 15px 18px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    #bottom {
+        margin-top: 80px;
+        gap: 270px;
+    }
+
+    h9 {
+        font-size: 18px;
+    }
+}

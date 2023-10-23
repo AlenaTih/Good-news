@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Good News</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="favicon-32x32.png">
+        <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="top">
+                <img src="assets/sun-little.png">
+                <h1>Good News</h1>
+            </div>
+            <div id="input-fields">
+                <textarea id="input-news" placeholder="Write your piece of positivity here"></textarea>
+                <div id="from-date-fields">
+                    <input type="text" class="input-user" id="input-from" placeholder="Author">
+                    <input type="date" class="input-user" id="input-date" placeholder="Date">
+                </div>
+            </div>
+            <button id="publish-btn">Publish</button>
+            <div id="thankyou-message" style="display: none; opacity: 0;">
+                Thank you for spreading the light! ❤️
+            </div>
+            <div id="feed">
+                <h2>- Feed of Light -</h2>
+                <ul id="news-feed">
+                </ul>
+            </div>
+            <div id="bottom">
+                <h9>Attribution: photo by
+                    <a href="https://unsplash.com/@tostilse?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ilse Stokking</a>
+                    on
+                    <a href="https://unsplash.com/photos/brown-trees-on-green-grass-field-during-daytime-IZTKY_UGOQ8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                    Unsplash</a>
+                </h9>
+                <h9>My links:
+                    <a href="">GitHub</a>,
+                    <a href="">LinkedIn</a>
+                </h9>
+            </div>
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

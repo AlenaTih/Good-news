@@ -1,0 +1,12 @@
+{
+    "name": "Good News Feed",
+    "short_name": "Good News Feed",
+    "icons":
+        [
+            {"src": "android-chrome-192x192.png", "sizes": "192x192", "type": "image/x-icon"},
+            {"src": "android-chrome-512x512.png", "sizes": "512x512", "type": "image/x-icon"}
+        ],
+    "theme_color": "#FBF2F5",
+    "background_color": "#FBF2F5",
+    "display": "standalone"
+}
