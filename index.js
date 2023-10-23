@@ -45,7 +45,7 @@ inputDateEl.addEventListener("keypress", function(event) {
 publishButtonEl.addEventListener("click", function() {
     // Validation check. Check if news input field is not empty
     if (!inputNewsEl.value.trim()) {
-        alert("Please type your news ❤️")
+        alert("Please type in your news ❤️")
         return
     }
 
