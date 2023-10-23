@@ -197,6 +197,7 @@ p {
     flex-direction: row;
     justify-content: space-around;
     margin: 60px;
+    gap: 60px;
 }
 
 h9 {
@@ -276,7 +277,7 @@ h9 {
     #bottom {
         justify-content: space-around;
         margin-top: 80px;
-        /* gap: 270px; */
+        gap: 270px;
     }
 
     h9 {
