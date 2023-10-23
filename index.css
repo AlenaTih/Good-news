@@ -2,6 +2,9 @@ html, body {
     margin: 0;
     padding: 0;
     user-select: none;
+    background-image: url(assets/ilse-stokking-unsplash-plant-the-light.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #container {
@@ -16,9 +19,7 @@ html, body {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 0;
-    background-image: url(assets/ilse-stokking-unsplash-plant-the-light.jpg);
-    background-size: cover;
-    background-position: center;
+    
     padding: 40px;
 }
 
@@ -194,9 +195,8 @@ p {
 #bottom {
     display: flex;
     flex-direction: row;
-    gap: 120px;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    justify-content: space-around;
+    margin: 60px;
 }
 
 h9 {
@@ -274,8 +274,9 @@ h9 {
     }
 
     #bottom {
+        justify-content: space-around;
         margin-top: 80px;
-        gap: 270px;
+        /* gap: 270px; */
     }
 
     h9 {
