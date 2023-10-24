@@ -118,7 +118,15 @@ function prependNewsToNewsFeedEl(item, key) {
         let newNews = item.news
         let newFrom = item.from
         let newDate = item.date
-        let likesSymbol = item.like
+        // let likesSymbol = item.like
+        let likesSymbol = "🖤"
+
+        if (localStorage.getItem(`liked-${key}`)) {
+            // Indicate it's already liked
+            likesSymbol = "❤️"
+        }
+
+
         let likesNumber = item.likesCount
 
 
@@ -159,11 +167,13 @@ function prependNewsToNewsFeedEl(item, key) {
                 number -= 1 // Decrement like count
                 localStorage.removeItem(`liked-${itemKey}`) // Remove from local storage
                 btn.removeAttribute("data-liked") // Mark as unliked
+                btn.textContent = "🖤"
             } else {
                 // Like the news item
                 number +=1 // Increment like count
                 localStorage.setItem(`liked-${itemKey}`, true) // Save to local storage
                 btn.setAttribute("data-liked", "true") // Mark as liked
+                btn.textContent = "❤️"
             }
 
            countEl.textContent = number // Update what is rendered (display)
