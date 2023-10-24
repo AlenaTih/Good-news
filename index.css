@@ -205,6 +205,20 @@ h9 {
     font-size: 15px;
 }
 
+a {
+    color: #D4E3FF;
+}
+
+a:hover {
+    color: #7DA7FB;
+}
+
+a:active {
+    color: #7DA7FB;
+}
+
+
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #container {
